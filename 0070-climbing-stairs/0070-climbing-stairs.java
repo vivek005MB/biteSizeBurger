@@ -2,15 +2,10 @@ class Solution {
     int[] dp;
     
     public int climbStairs(int n) {
-        return bottomup(n);
-       
-        
-        // dp = new int[n+1];
-        // Arrays.fill(dp,-1);
-        // return topdown(n);
-        
-
-        
+        // return bottomup(n);
+        dp = new int[n+1];
+        Arrays.fill(dp,-1);
+        return topdown(n);      
     }
     public int bottomup(int n)
     {
